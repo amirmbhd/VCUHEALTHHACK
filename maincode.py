@@ -73,7 +73,7 @@ def main():
     st.subheader('Welcome to ????')
     
     menu = ["Home","Login","SignUp"]
-    submenu = [ "Plot" , "Prediction", "Analytics" ]
+    submenu = [ "Visit Overview" , "Visit Summary", "Lab Results", "Medication", "Health Check" ]
     
     choice = st.sidebar.selectbox ("Menu", menu)
     if choice == "Home":
