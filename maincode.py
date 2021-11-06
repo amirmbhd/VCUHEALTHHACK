@@ -116,7 +116,7 @@ def main():
                             if st.button("Predict"):
 
                                     if model_choice == "KNN":
-						print("knn")
+                                            print("knn")
                                     elif model_choice == "Blood glucose Prection":
                                             if fasting_bg < 140 
 						print("normal") 
