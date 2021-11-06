@@ -69,7 +69,7 @@ import lime.lime_tabular
 def main():
 
 
-    st.title(text-align: center,'Pocket HealthRef')
+    st.title('                 Pocket HealthRef')
     st.subheader('Welcome to Pocket HealthRef')
     
     menu = ["Home","Login","SignUp"]
