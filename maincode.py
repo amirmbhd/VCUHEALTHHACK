@@ -69,7 +69,7 @@ import lime.lime_tabular
 def main():
 
 
-    st.title('Diabetes Analysis App')
+    st.title('Pocket Medref')
     st.subheader('Welcome to The Future')
     
     menu = ["Home","Login","SignUp"]
