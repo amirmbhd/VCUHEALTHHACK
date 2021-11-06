@@ -9,6 +9,7 @@ Created on Wed Oct 28 22:33:24 2020
 # DB
 
 import sqlite3
+sqlite3.connect(":memory:", check_same_thread = False)
 conn = sqlite3.connect('usersdata.db')
 c = conn.cursor()
 
