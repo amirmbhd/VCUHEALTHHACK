@@ -124,9 +124,7 @@ def main():
 						
 						
                                     else:
-                                            loaded_model = load_model("models/logistic_regression_diabetes_model.pkl")
-                                            prediction = loaded_model.predict(single_sample)
-                                            pred_prob = loaded_model.predict_proba(single_sample)
+                                           
                                     
 				)                                  
                              
