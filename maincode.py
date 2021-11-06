@@ -112,7 +112,6 @@ def main():
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
                             pretty_result = {"Fasting blood glucose":fasting_bg}
                             st.json(pretty_result)
-                            single_sample = np.array(feature_list).reshape(1,-1)
                             model_choice = st.selectbox("Select Model",["LR","KNN","DecisionTree"])
                             if st.button("Predict"):
 
