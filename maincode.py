@@ -69,8 +69,8 @@ import lime.lime_tabular
 def main():
 
 
-    st.title('Pocket Medref')
-    st.subheader('Welcome to The Future')
+    st.title('Pocket HealthRef')
+    st.subheader('Welcome to ????')
     
     menu = ["Home","Login","SignUp"]
     submenu = [ "Plot" , "Prediction", "Analytics" ]
