@@ -10,7 +10,7 @@ Created on Wed Oct 28 22:33:24 2020
 import sqlite3
 conn = sqlite3.connect('usersdata.db')
 c = conn.cursor()
-sqlite3.conn(":memory:", check_same_thread=False)
+conn(":memory:", check_same_thread=False)
 
 # Functions
 
