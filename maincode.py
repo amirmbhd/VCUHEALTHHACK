@@ -70,7 +70,7 @@ def main():
 
 
     st.title('Pocket HealthRef')
-    st.subheader('Welcome to ????')
+    st.subheader('Welcome to Pocket HealthRef')
     
     menu = ["Home","Login","SignUp"]
     submenu = [ "Visit Overview" , "Visit Summary", "Lab Results", "Medication", "Health Check" ]
