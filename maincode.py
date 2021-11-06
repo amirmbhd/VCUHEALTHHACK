@@ -108,8 +108,8 @@ def main():
 		
 				
                     elif activity == "Health Check":
-                            st.subheader("Predictive Analytics")
-                            Age = st.number_input("Age",7,80)                        	
+                            st.subheader("Instant feedback on your daily health measurments ")
+                            Age = st.number_input("What was your fasting blood glucose level today?",7,80)                        	
                             Gender = st.radio("Gender",tuple(gender_dict.keys()))
                             Polyuria = st.radio("Do you have Polyuria?",tuple(feature_dict.keys()))
                             Polydipsia = st.radio("Do you have Polydipsia?",tuple(feature_dict.keys()))
