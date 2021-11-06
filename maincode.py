@@ -116,9 +116,7 @@ def main():
                             if st.button("Predict"):
 
                                     if model_choice == "KNN":
-                                            loaded_model = load_model("models/knn_diabetes_model.pkl")
-                                            prediction = loaded_model.predict(single_sample)
-                                            pred_prob = loaded_model.predict_proba(single_sample)
+                                            
                                     elif model_choice == "Blood glucose Prection":
                                             fasting_bg = (140, "normal")
 						
