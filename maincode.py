@@ -112,17 +112,18 @@ def main():
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
                             pretty_result = {"Fasting blood glucose":fasting_bg}
                             st.json(pretty_result)
-                            model_choice = st.selectbox("Select Model",["LR","KNN","DecisionTree"])
+                            model_choice = st.selectbox("Select Model",["LR","KNN","Blood glucose Prection"])
                             if st.button("Predict"):
 
                                     if model_choice == "KNN":
                                             loaded_model = load_model("models/knn_diabetes_model.pkl")
                                             prediction = loaded_model.predict(single_sample)
                                             pred_prob = loaded_model.predict_proba(single_sample)
-                                    elif model_choice == "DecisionTree":
-                                            loaded_model = load_model("models/decision_tree_clf_diabetes_model.pkl")
-                                            prediction = loaded_model.predict(single_sample)
-                                            pred_prob = loaded_model.predict_proba(single_sample)
+                                    elif model_choice == "Blood glucose Prection":
+                                            fasting_bg = (140, "normal")
+						
+						
+						
                                     else:
                                             loaded_model = load_model("models/logistic_regression_diabetes_model.pkl")
                                             prediction = loaded_model.predict(single_sample)
