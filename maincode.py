@@ -79,7 +79,7 @@ def main():
     if choice == "Home":
         st.subheader("Home")
         st.text( "Pocket HealthRef is a web-based tool where you can access information about your recent visits to the doctor’s office!\n Among other things, Patient HealthRef allows you to relisten to your visit with your doctor. If you’ve ever felt like you forgot some important information after a visit, Pocket HealthRef is just the tool for you! ")
-        st.text_area(label, value='', height=None, max_chars=None, key=None)
+        st.text(label, value='', height=None, max_chars=None, key=None)
 
     elif choice == "Login" :
         username = st.sidebar.text_input ("Username")
