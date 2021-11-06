@@ -109,24 +109,7 @@ def main():
 				
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
-                            Age = st.number_input("What was your fasting blood glucose level today?",7,80)                        	
-                            Gender = st.radio("Gender",tuple(gender_dict.keys()))
-                            Polyuria = st.radio("Do you have Polyuria?",tuple(feature_dict.keys()))
-                            Polydipsia = st.radio("Do you have Polydipsia?",tuple(feature_dict.keys()))
-                            Sudden_weight_loss = st.radio("Hve you recently had sudden weight loss?",tuple(feature_dict.keys()))
-                            Weakness = st.radio("Do you usually have muscle weakness?",tuple(feature_dict.keys()))
-                            Polyphagia = st.radio("Have you recently experienced excessive hunger or increased appetite?",tuple(feature_dict.keys()))
-                            Genital_thrush = st.radio("Do you have Genital thrush?",tuple(feature_dict.keys()))
-                            Visual_blurring = st.radio("Have you recently experienced visual blurring?",tuple(feature_dict.keys()))
-                            Itching = st.radio("Have you recently experienced Unexplained Itching?",tuple(feature_dict.keys()))
-                            Irritability = st.radio("Have you recently experienced excessive Irritability?",tuple(feature_dict.keys()))
-                            Delayed_healing = st.radio("Have you recently experienced delayed wound healing?",tuple(feature_dict.keys()))
-                            Partial_paresis = st.radio("Have you recently experienced partial paresis?",tuple(feature_dict.keys()))
-                            Muscle_stiffness = st.radio("Have you recently experienced muscle stiffness?",tuple(feature_dict.keys()))
-                            Alopecia = st.radio("Do you have Alopecia?( patchy hair loss)",tuple(feature_dict.keys()))
-                            Obesity = st.radio("Do you have Obesity based on your BMI?",tuple(feature_dict.keys()))                      
-                            feature_list = [Age,get_value(Gender,gender_dict),get_fvalue(Polyuria),get_fvalue(Polydipsia),get_fvalue(Sudden_weight_loss),get_fvalue(Weakness),get_fvalue(Polyphagia),get_fvalue(Genital_thrush),get_fvalue(Visual_blurring),get_fvalue(Itching),get_fvalue(Irritability),get_fvalue(Delayed_healing),get_fvalue(Partial_paresis),get_fvalue(Muscle_stiffness),get_fvalue(Alopecia),get_fvalue(Obesity)]
-                            st.write(len(feature_list))			
+                            
                             pretty_result = {"Age":Age,"Gender":Gender,"Polyuria":Polyuria,"Polydipsia":Polydipsia,"Sudden_weight_loss":Sudden_weight_loss,"Weakness":Weakness,"Polyphagia":Polyphagia,"Genital_thrush":Genital_thrush,"visual_blurring":Visual_blurring,"Itching":Itching,"Irritability":Irritability,"Delayed_healing":Delayed_healing,"Partial_paresis":Partial_paresis,"Muscle_stiffness":Muscle_stiffness,"Alopecia":Alopecia,"Obesity":Obesity}
                             st.json(pretty_result)
                             single_sample = np.array(feature_list).reshape(1,-1)
