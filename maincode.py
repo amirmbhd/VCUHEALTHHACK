@@ -107,7 +107,7 @@ def main():
 			
 		
 				
-                    elif activity == "Prediction":
+                    elif activity == "Health Check":
                             st.subheader("Predictive Analytics")
                             Age = st.number_input("Age",7,80)                        	
                             Gender = st.radio("Gender",tuple(gender_dict.keys()))
