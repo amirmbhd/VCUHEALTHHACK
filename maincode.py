@@ -78,7 +78,7 @@ def main():
     choice = st.sidebar.selectbox ("Menu", menu)
     if choice == "Home":
         st.subheader("Home")
-        st.text( "Are you on path to Diabetes? Let\'s findout")
+        st.text( "some sort of information about our app")
       
     elif choice == "Login" :
         username = st.sidebar.text_input ("Username")
