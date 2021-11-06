@@ -118,7 +118,8 @@ def main():
                                     if model_choice == "KNN":
                                             
                                     elif model_choice == "Blood glucose Prection":
-                                            fasting_bg = (140, "normal")
+                                            if fasting_bg < 140 
+						print(normal) 
 						
 						
 						
@@ -127,18 +128,7 @@ def main():
                                             prediction = loaded_model.predict(single_sample)
                                             pred_prob = loaded_model.predict_proba(single_sample)
                                     
-				
-                                    if prediction == 0:
-                                        st.warning("Patient is not Diabetic")
-                                        pred_probability_score = {"Not Diabetic":pred_prob[0][0]*100,"Diabetic":pred_prob[0][1]*100}
-                                        st.subheader("Prediction Probability Score using {}".format(model_choice))
-                                        st.json(pred_probability_score)
-                                        
-                                    else:
-                                        st.success("Patient is Diabetic")
-                                        pred_probability_score = {"Not Diabetic":pred_prob[0][0]*100,"Diabetic":pred_prob[0][1]*100}
-                                        st.subheader("Prediction Probability Score using {}".format(model_choice))
-                                        st.json(pred_probability_score)                                  
+				)                                  
                              
                             if st.checkbox("Interpret"):            
                                     if model_choice == "KNN":
