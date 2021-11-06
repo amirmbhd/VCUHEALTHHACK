@@ -126,7 +126,7 @@ def main():
                                     else:
                                            
                                     
-				)                                  
+				                                  
                              
                             if st.checkbox("Interpret"):            
                                     if model_choice == "KNN":
