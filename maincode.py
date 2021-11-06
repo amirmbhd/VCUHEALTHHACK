@@ -110,7 +110,7 @@ def main():
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
-                            pretty_result = {"Fasting blood glucose":fasting_bp,"Gender":Gender,"Polyuria":Polyuria,"Polydipsia":Polydipsia,"Sudden_weight_loss":Sudden_weight_loss,"Weakness":Weakness,"Polyphagia":Polyphagia,"Genital_thrush":Genital_thrush,"visual_blurring":Visual_blurring,"Itching":Itching,"Irritability":Irritability,"Delayed_healing":Delayed_healing,"Partial_paresis":Partial_paresis,"Muscle_stiffness":Muscle_stiffness,"Alopecia":Alopecia,"Obesity":Obesity}
+                            pretty_result = {"Fasting blood glucose":fasting_bg,"Gender":Gender,"Polyuria":Polyuria,"Polydipsia":Polydipsia,"Sudden_weight_loss":Sudden_weight_loss,"Weakness":Weakness,"Polyphagia":Polyphagia,"Genital_thrush":Genital_thrush,"visual_blurring":Visual_blurring,"Itching":Itching,"Irritability":Irritability,"Delayed_healing":Delayed_healing,"Partial_paresis":Partial_paresis,"Muscle_stiffness":Muscle_stiffness,"Alopecia":Alopecia,"Obesity":Obesity}
                             st.json(pretty_result)
                             single_sample = np.array(feature_list).reshape(1,-1)
                             model_choice = st.selectbox("Select Model",["LR","KNN","DecisionTree"])
