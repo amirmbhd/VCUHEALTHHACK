@@ -118,7 +118,7 @@ def main():
                                     if model_choice == "KNN":
                                             print("knn")
                                     elif model_choice == "Blood glucose Prection":
-                                            if fasting_bg < 140 
+                                            if fasting_bg < 140: 
 						print("normal") 
 						
 						
