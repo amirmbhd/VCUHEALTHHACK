@@ -124,7 +124,8 @@ def main():
                         st.write("check out this [link](https://drive.google.com/file/d/1eRJHrcukUcoKUsmx0htwtJDTOdaMsA7m/view?usp=sharing)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
-                        c_image = 'SampleVisitSummary.png'
+                        Image.open('SampleVisitSummary.png').convert('RGB').save('SampleVisitSummary2.png')
+                        c_image = 'SampleVisitSummary2.png'
                         load_images(c_image)
                        
 
