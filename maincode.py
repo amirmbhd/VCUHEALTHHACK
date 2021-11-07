@@ -98,11 +98,7 @@ def main():
                     st.success("Welcome {}".format(username))
                     activity = st.selectbox("Activity", submenu)
                     if activity == ( "Visit Overview"): 
-			
-			
-			
-			
-			st.markdown("** What are the changes after my previous visit? **")
+                        st.markdown("** What are the changes after my previous visit? **")
                         st.subheader("Visit Overview")
                         df = pd.read_csv("data/diabetesdata.csv")
                         st.dataframe(df)
