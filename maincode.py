@@ -140,6 +140,9 @@ def main():
                         st.markdown("**Direction:** Inject ten (10) units into the side of your lower abdomen once a day. Injection instructions are included with the medication pen.")
                         st.markdown("**Storage:** Refrigerate medication pens until ready to inject. Take one pen out of the fridge and let sit for 5 minutes before injection. Do not store medication pen outside of the refrigerator.")
                         st.markdown("**Side effects:** Sudden and violent death (70% of cases), mild headache (3%).")
+                        Image.open('Lantus3.png').convert('RGB').save('lantus2.png')
+                        c_image4 = 'lantus2.png'
+                        load_images(c_image4)
                         st.markdown("**Amlodipine 5mg for High Blood Pressure**")
                         st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension.")
                         st.markdown("**Storage:** Store at room temperature away from moisture or direct sunlight.")
@@ -152,9 +155,7 @@ def main():
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
                         st.markdown("**Phone Number:** (804) 987-6555")
                         st.markdown("Call this number if you have questions about your current medications.")
-                        Image.open('Lantus3.png').convert('RGB').save('lantus2.png')
-                        c_image4 = 'lantus2.png'
-                        load_images(c_image4)			
+			
 			
 			
 			
