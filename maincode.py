@@ -74,7 +74,7 @@ def main():
     st.subheader('Welcome to Pocket HealthRef')
     
     menu = ["Home","Login","SignUp"]
-    submenu = [ "Visit Overview" , "Visit Summary", "Lab Results", "Medications", "Health Check" ]
+    submenu = [ "Visit Overview" , "Visit Summary", "Medications", "Health Check" ]
     
     choice = st.sidebar.selectbox ("Menu", menu)
     if choice == "Home":
