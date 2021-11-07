@@ -98,9 +98,8 @@ def main():
                     st.success("Welcome {}".format(username))
                     activity = st.selectbox("Activity", submenu)
                     if activity == ( "Visit Overview"): 
-                        st.markdown("** What are the changes after my previous visit? **")
                         st.subheader("Visit Overview")
-                        
+                        st.markdown("** What are the changes after my previous visit? **")
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
