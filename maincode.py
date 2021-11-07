@@ -163,13 +163,14 @@ def main():
                         c_image3 = 'amlodipine2.png'
                         load_images(c_image3)	
                         user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to fill.")
+                        if st.button("Submit"):
+                            st.success("You will receive text message reminders whenever your medication is due to take. text STOP to opt out.")
                         st.subheader("**My Pharmacy Contacts:**")
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
                         st.markdown("**Phone Number:** (804) 987-6555")
                         st.markdown("Call this number if you have questions about your current medications.")
-                        if st.button("Submit"):
-                            st.success("You will receive text message reminders whenever your medication is due to take. text STOP to opt out.")
+
 			
 			
 			
