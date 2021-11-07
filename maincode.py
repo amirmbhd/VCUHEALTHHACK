@@ -186,7 +186,7 @@ def main():
                             	st.info("Your fasting blood glucose value is above the recommended goal.")      
                             if int_val3 < 70 and int_val3 > 0:
                             	st.info("Your fasting blood glucose value is above the recommended goal.")
-                            if int_val3 >= 70 and int_val3 =< 130 :
+                            if int_val3 > 70 and int_val3 < 130 :
                             	st.info("Your fasting blood glucose value is within the recommended goal.")
                             st.markdown("**Your fasting blood glucose trend:**")
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
