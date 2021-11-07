@@ -124,7 +124,9 @@ def main():
                         st.write("check out this [link](https://github.com/amirmbhd/VCUHEALTHHACK/blob/b919d2a4dd77a8a2d9c9d9dcf283a49b07ea32c7/Sample%20Visit%20Summary.pdf)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
-                        st.image(0001.jpg, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+                        c_image = '0001.jpg'
+                        load_images(c_image)
+                        st.image(0001.jpg  , caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 			
