@@ -103,7 +103,15 @@ def main():
                         st.markdown(" No change in medication.")
                         st.markdown(" No change in diet.")
                         st.markdown(" No change in exercise recommendations.")
-
+			st.markdown("** My next appointment **")
+                        st.markdown(" General Checkup on 12/10/2022 at 10:00 am. Make sure not to eat anything that morning. You can drink water.")	
+			st.markdown("** My Doctor’s Contact Information")
+                        st.markdown(" Address: 4444 West Coast Dr., Richmond, VA 23220")
+                        st.markdown(" Phone Number: (804) 987-6554")
+                        st.markdown(" Office Hours: 8 am to 3 pm, Monday to Thursday")
+			st.markdown("If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above!")
+			
+			
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
