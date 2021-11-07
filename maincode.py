@@ -147,16 +147,15 @@ def main():
                         Image.open('amlodipine.png').convert('RGB').save('amlodipine2.png')
                         c_image3 = 'amlodipine2.png'
                         load_images(c_image3)			
-			
-			
-			
-			
                         st.subheader("**My Pharmacy Contacts:**")
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
                         st.markdown("**Phone Number:** (804) 987-6555")
                         st.markdown("Call this number if you have questions about your current medications.")
-                   
+                        Image.open('lantus.png').convert('RGB').save('lantus2.png')
+                        c_image4 = 'lantus2.png'
+                        load_images(c_image4)			
+			
 			
 			
 			
