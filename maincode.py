@@ -112,7 +112,6 @@ def main():
                         st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above!")
                     elif activity == ( "Visit Summary"): 
                         st.subheader("Visit Summary")
-                        st.subheader("Visit Summary")
                         st.markdown("Date: 10/10/2021")
                         st.markdown(" **Doctor’s Notes:**")
                         st.markdown(" Patient presented for a routine checkup. Vitals are all within range considering diabetes mellitus. Continue medications, exercise routine, and diet. Weight loss is at a steady and healthy pace. There were no observations of side effects from medications.")
