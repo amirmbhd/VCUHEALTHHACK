@@ -192,7 +192,8 @@ def main():
                             bps1 = float(bps)
                             bpd = st.number_input("what was your diastolicressure today?")
                             int_val = st.number_input('Seconds', min_value=1, max_value=10, value=5, step=1)
-                          
+                            if int_val > 120
+                            	st.info("Login to Get Started")                    
 				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
                             st.markdown("The recommended systolic and diastolic blood pressure values for you are less than **130** mmHg and **80** mmHg respectively.")
