@@ -100,20 +100,7 @@ def main():
                     if activity == ( "Visit Overview"): 
                         st.markdown("** What are the changes after my previous visit? **")
                         st.subheader("Visit Overview")
-                        df = pd.read_csv("data/diabetesdata.csv")
-                        st.dataframe(df)
-                        if st.checkbox("Area Chart"):
-                            all_columns = df.columns.to_list()
-                            feat_choices = st.multiselect("Choose a Feature",all_columns)
-                            new_df = df[feat_choices]
-                            st.area_chart(new_df)
-
                         
-		
-                        
-			
-		
-				
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
