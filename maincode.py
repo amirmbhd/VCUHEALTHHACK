@@ -124,7 +124,7 @@ def main():
                         st.header("Request to book a new appoinment here:")
                         st.date_input('Office Availability')
                         if st.button("Submit"):
-                            st.success("We have received your appoinment request. We will  be in touch within 24 hours of receiving your request")				
+                            st.success("We have received your appoinment request. We will  be in touch within 24 hours of receiving your request to confirm your appoinment.")				
                     elif activity == ( "Visit Summary"): 
                         st.subheader("Visit Summary")
                         st.markdown("Date: 10/10/2021")
