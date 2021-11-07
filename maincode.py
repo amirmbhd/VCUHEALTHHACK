@@ -189,8 +189,10 @@ def main():
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
                             bps = st.number_input("what was your systolic blood pressure today?")
+                            bps1 = float(bps)
                             bpd = st.number_input("what was your diastolicressure today?")
-                            if bps> '130':
+			
+                            if bps1> '130':
                             	st.info("Your blood pressure value is above goal.")
 				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
