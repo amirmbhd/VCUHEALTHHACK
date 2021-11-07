@@ -123,7 +123,7 @@ def main():
                         st.markdown(" Address: 4444 West Coast Dr., Richmond, VA 23220")
                         st.markdown(" Phone Number: (804) 987-6554")
                         st.markdown(" Office Hours: 8 am to 3 pm, Monday to Thursday")
-                        st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above or use the following calender to request a new appoinment.")
+                        st.markdown(" If you have any question, or if you need to reschedule your next appointment, please call me using the phone number above or use the following calender to request a new appoinment.")
                         st.header("Request to book a new appoinment here:")
                         st.date_input('Office Availability')
                         if st.button("Submit"):
@@ -138,7 +138,7 @@ def main():
                         st.markdown(" Blood Glucose: 90 mg/dL")
                         st.markdown(" Heart Rate: 90 beats per minute")
                         st.markdown(" Weight: 243 lbs")
-                        st.write("Please find your full viisit summary below:")
+                        st.write("Please find your full visit summary below:")
 
                         Image.open('SampleVisitSummary.png').convert('RGB').save('SampleVisitSummary2.png')
                         c_image = 'SampleVisitSummary2.png'
@@ -158,13 +158,13 @@ def main():
                         st.markdown("**Storage:** Refrigerate medication pens until ready to inject. Take one pen out of the fridge and let sit for 5 minutes before injection. Do not store medication pen outside of the refrigerator.")
                         Image.open('Lantus3.png').convert('RGB').save('lantus2.png')
                         c_image4 = 'lantus2.png'
-                        load_images(c_image4)
+                        load_images2(c_image4)
                         st.markdown("**Amlodipine 5mg for High Blood Pressure**")
                         st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension.")
                         st.markdown("**Storage:** Store at room temperature away from moisture or direct sunlight.")                      
                         Image.open('amlodipine.png').convert('RGB').save('amlodipine2.png')
                         c_image3 = 'amlodipine2.png'
-                        load_images(c_image3)	
+                        load_images2(c_image3)	
                         user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to take.")
                         if st.button("Submit"):
                             st.success("You will receive text message reminders whenever your medication is due to take. text STOP to opt out.")
@@ -191,8 +191,8 @@ def main():
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
-                            int_val = st.number_input('what was your systolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
-                            int_val2 = st.number_input('what was your diastolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
+                            int_val = st.number_input('What was your systolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
+                            int_val2 = st.number_input('What was your diastolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
                             if int_val > 130 or int_val2 > 80:
                             	st.info("Your blood pressure is above the recommended goal.")      
                             if int_val < 130 and int_val2 < 80:
