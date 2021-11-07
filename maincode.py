@@ -123,7 +123,7 @@ def main():
                         st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above or use the following calender to request a new appoinment. We will  be in touch within 24 hours of receiving your request")
                         st.header("Request to book a new appoinment here:")
                         st.date_input('Office Availability')
- 
+                        st.form_submit_button(label='Submit your request')
                     elif activity == ( "Visit Summary"): 
                         st.subheader("Visit Summary")
                         st.markdown("Date: 10/10/2021")
