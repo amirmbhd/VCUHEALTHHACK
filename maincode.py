@@ -121,9 +121,9 @@ def main():
                         st.markdown(" Phone Number: (804) 987-6554")
                         st.markdown(" Office Hours: 8 am to 3 pm, Monday to Thursday")
                         st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above!")
-                        st.header("Official Date Picker")
-                        st.date_input('start date')
-                        st.date_input('end date')
+                        st.header("You can book or reschedule your appoinment here")
+                        st.date_input('Office Availability')
+ 
                     elif activity == ( "Visit Summary"): 
                         st.subheader("Visit Summary")
                         st.markdown("Date: 10/10/2021")
