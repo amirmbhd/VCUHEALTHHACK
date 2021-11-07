@@ -190,7 +190,7 @@ def main():
                             st.line_chart(df)
                             bps = st.number_input("what was your systolic blood pressure today?")
                             bpd = st.number_input("what was your diastolicressure today?")
-                            if bps> "130"
+                            if bps> '130':
                             st.info("Your blood pressure value is above goal.")
 				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
