@@ -97,8 +97,13 @@ def main():
             if result:
                     st.success("Welcome {}".format(username))
                     activity = st.selectbox("Activity", submenu)
-                    if activity == ( "Plot"):    
-                        st.subheader("Data Visualization Plot")
+                    if activity == ( "Visit Overview"): 
+			
+			
+			
+			
+			st.markdown("** What are the changes after my previous visit? **")
+                        st.subheader("Visit Overview")
                         df = pd.read_csv("data/diabetesdata.csv")
                         st.dataframe(df)
                         if st.checkbox("Area Chart"):
