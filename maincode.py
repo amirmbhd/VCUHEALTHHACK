@@ -95,7 +95,7 @@ def main():
         load_images2(c_image7)
         st.markdown("**To start using Pocket HealthRef, please follow these steps:**")
         st.markdown(" New Users: Create an account by clicking the SignUp option from the dropdown menu on the left side of your screen") 
-        st.markdown(" Login to your account by clicking on the Login option from the dropdown menu.")
+        st.markdown(" Returning Users: Login to your account by clicking on the Login option from the dropdown menu.")
         st.markdown(" At this point, you should be able to see the data that your doctor has added to your account.")
         
 
