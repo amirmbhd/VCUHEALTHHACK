@@ -182,11 +182,11 @@ def main():
 			
                     elif activity == "Health Check":
                             int_val3 = st.number_input('What was your fasting blood glucose value today?', min_value=0, max_value=250, value=0, step=1)
-                            if int_val3 > 130 
+                            if int_val3 > 130 :
                             	st.info("Your fasting blood glucose value is above the recommended goal.")      
-                            if int_val3 < 70 and int_val3 > 0
+                            if int_val3 < 70 and int_val3 > 0:
                             	st.info("Your fasting blood glucose value is above the recommended goal.")
-                            if int_val3 >= 70 and int_val3 =< 130 
+                            if int_val3 >= 70 and int_val3 =< 130 :
                             	st.info("Your fasting blood glucose value is within the recommended goal.")
                             st.markdown("**Your fasting blood glucose trend:**")
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
