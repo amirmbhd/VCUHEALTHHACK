@@ -131,8 +131,8 @@ def main():
                         st.write("Please find your full lab results below:")
 
                         Image.open('labresults.png').convert('RGB').save('labresults2.png')
-                        c_image = 'labresults2.png'
-			
+                        c_image2 = 'labresults2.png'
+                        load_images(c_image2)
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
