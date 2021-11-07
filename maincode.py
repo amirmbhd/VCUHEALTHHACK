@@ -170,6 +170,11 @@ def main():
                             pretty_result = {"Fasting blood glucose":fasting_bg}
                             st.json(pretty_result)
                             model_choice = st.selectbox("Select Model",["LR","KNN","Blood glucose Prection"])
+				
+				
+                            df = pd.read_csv("Glucose.csv")
+                            df.line_chart(data=None, width=0, height=0, use_container_width=True)
+
                             if st.button("Predict"):
 
                                     if model_choice == "KNN":
