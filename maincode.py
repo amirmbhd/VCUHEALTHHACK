@@ -144,7 +144,7 @@ def main():
                         st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension.")
                         st.markdown("**Storage:** Store at room temperature away from moisture or direct sunlight.")
                         st.markdown("**Side effects:** Undesired stroke event (50% of cases).")
-                        st.markdown("**My Pharmacy Contacts:**")
+                        st.subheader("**My Pharmacy Contacts:**")
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
                         st.markdown("**Phone Number:** (804) 987-6555")
