@@ -94,7 +94,7 @@ def main():
         st.markdown(" New Users: Create an account by clicking the SignUp option from the dropdown menu on the left side of your screen") 
         st.markdown(" Login to your account by clicking on the Login option from the dropdown menu.")
         st.markdown(" At this point, you should be able to see the data that your doctor has added to your account.")
-        st.markdown(" The next time you go to your doctor’s office, make sure to sign in to Pocket HealthRef on their computer so that your doctor can update your information.")
+        
 
 
     elif choice == "Login" :
@@ -162,7 +162,7 @@ def main():
                         Image.open('amlodipine.png').convert('RGB').save('amlodipine2.png')
                         c_image3 = 'amlodipine2.png'
                         load_images(c_image3)	
-                        user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to fill.")
+                        user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to take.")
                         if st.button("Submit"):
                             st.success("You will receive text message reminders whenever your medication is due to take. text STOP to opt out.")
                         st.subheader("**My Pharmacy Contacts:**")
