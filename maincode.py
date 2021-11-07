@@ -181,13 +181,19 @@ def main():
 			
 			
                     elif activity == "Health Check":
-				
+                            int_val3 = st.number_input('What was your fasting blood glucose value today?', min_value=0, max_value=250, value=0, step=1)
+                            if int_val3 > 130 
+                            	st.info("Your fasting blood glucose value is above the recommended goal.")      
+                            if int_val3 < 70 and int_val3 > 0
+                            	st.info("Your fasting blood glucose value is above the recommended goal.")
+                            if int_val3 >= 70 and int_val3 =< 130 
+                            	st.info("Your fasting blood glucose value is within the recommended goal.")
                             st.markdown("**Your fasting blood glucose trend:**")
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
-                            int_val = st.number_input('What was your systolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
-                            int_val2 = st.number_input('What was your diastolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
+                            int_val = st.number_input('What was your systolic blood pressure today?', min_value=0, max_value=250, value=0, step=1)
+                            int_val2 = st.number_input('What was your diastolic blood pressure today?', min_value=0, max_value=250, value=0, step=1)
                             if int_val > 130 or int_val2 > 80:
                             	st.info("Your blood pressure is above the recommended goal.")      
                             if int_val < 130 and int_val > 5 and int_val2 < 80 and int_val2 >5:
@@ -198,14 +204,7 @@ def main():
                             df2 = pd.read_csv("bp.csv")
                             st.bar_chart(df2)
 				
-				
-                            if st.button("Predict"):
-
-                                    if model_choice == "KNN":
-                                            print("knn")
-                                    elif model_choice == "Blood glucose Prection":
-                                            if fasting_bg < 140: 
-                                                print("normal") 
+			
 						
 						
 						
@@ -213,22 +212,6 @@ def main():
                                            
                                     
 				                                  
-                             
-                            if st.checkbox("Interpret"):            
-                                    if model_choice == "KNN":
-                                        loaded_model = load_model("models/knn_diabetes_model.pkl")
-
-			
-                                    elif model_choice == "DecisionTree":
-                                        loaded_model = load_model("models/decision_tree_clf_diabetes_model.pkl")
-                            
-                                    else:
-                                        loaded_model = load_model("models/logistic_regression_diabetes_model.pkl")
-					
-
-			
-                                                                       					
-					
 					
 					
 					
