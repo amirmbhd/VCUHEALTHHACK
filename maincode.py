@@ -116,7 +116,7 @@ def main():
                         st.markdown(" **Doctor’s Notes:**")
                         st.markdown(" Patient presented for a routine checkup. Vitals are all within range considering diabetes mellitus. Continue medications, exercise routine, and diet. Weight loss is at a steady and healthy pace. There were no observations of side effects from medications.")
                         st.markdown(" **Recent Vitals:**")
-                        st.markdown(" Blood Pressure: 116/75 mmHg")
+                        st.markdown(" Blood Pressure: 130/80 mmHg")
                         st.markdown(" Blood Glucose: 90 mg/dL")
                         st.markdown(" Heart Rate: 90 beats per minute")
                         st.markdown(" Weight: 243 lbs")
