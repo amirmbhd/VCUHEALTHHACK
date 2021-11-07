@@ -162,7 +162,7 @@ def main():
                         Image.open('amlodipine.png').convert('RGB').save('amlodipine2.png')
                         c_image3 = 'amlodipine2.png'
                         load_images(c_image3)	
-                        user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to fill.)"
+                        user_input = st.text_input("Enter your phone number to receive daily reminders when your medication is due to fill.")
                         st.subheader("**My Pharmacy Contacts:**")
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
