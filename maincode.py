@@ -148,7 +148,7 @@ def main():
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
                         st.markdown("**Phone Number:** (804) 987-6555")
-                        st.markdown("Call the number if you have questions about your current medications")
+                        st.markdown("Call this number if you have questions about your current medications.")
                    
 			
 			
