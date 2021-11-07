@@ -121,7 +121,7 @@ def main():
                         st.markdown(" Blood Glucose: 90 mg/dL")
                         st.markdown(" Heart Rate: 90 beats per minute")
                         st.markdown(" Weight: 243 lbs")
-                        st.write("check out this [link](https://github.com/amirmbhd/VCUHEALTHHACK/blob/b919d2a4dd77a8a2d9c9d9dcf283a49b07ea32c7/Sample%20Visit%20Summary.pdf)")
+                        st.write("check out this [link](https://drive.google.com/drive/folders/1y0i-jvamMnGSGq6VgvIHxZIyrFKQYmAm?usp=sharing)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
                         c_image = 'SampleVisit Summary.png'
