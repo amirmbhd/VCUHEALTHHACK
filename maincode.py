@@ -126,7 +126,7 @@ def main():
                         st.markdown(" Lab results are all normal. ")
                         c_image = 'SampleVisit Summary.png'
                         load_images(c_image)
-                        st.image(0001.jpg  , caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+                       
 
 
 			
