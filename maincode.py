@@ -173,7 +173,7 @@ def main():
 				
 				
                             df = pd.read_csv("Glucose.csv")
-                            st.line_chart(data= df, width=0, height=0, use_container_width=True)
+                            st.altair_chart(data= df, width=0, height=0, use_container_width=True)
 
                             if st.button("Predict"):
 
