@@ -184,9 +184,12 @@ def main():
                             st.json(pretty_result)
                             model_choice = st.selectbox("Select Model",["LR","KNN","Blood glucose Prection"])
 				
-				
+                            st.markdown("**Your fasting blood glucose trend**")
+                            st.markdown("The recommended fasting blood glucose range is within 70–130 mg/dl for you")
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
+                            st.markdown("**Your systolic and diastolic blood pressure trend**")
+                            st.markdown("The recommended systolic and diastolic blood pressure values for you are less than 130 mmHg and 80 mmHg respectively")
                             df2 = pd.read_csv("bp.csv")
                             st.bar_chart(df2)
 				
