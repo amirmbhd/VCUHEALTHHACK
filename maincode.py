@@ -12,6 +12,7 @@ import numpy as np
 
 import os
 import joblib 
+import base64
 
 import matplotlib.pyplot as plt
 import matplotlib
@@ -123,6 +124,14 @@ def main():
                         st.write("check out this [link](https://github.com/amirmbhd/VCUHEALTHHACK/blob/b919d2a4dd77a8a2d9c9d9dcf283a49b07ea32c7/Sample%20Visit%20Summary.pdf)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
+                        def show_pdf(file_path):
+			    with open(SampleVisitSummary.pdf,"rb") as f:
+			         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+			    pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
+			    st.markdown(pdf_display, unsafe_allow_html=True)
+
+
+show_pdf("my_pdf.pdf")
 
 
 			
