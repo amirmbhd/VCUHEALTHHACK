@@ -188,12 +188,10 @@ def main():
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
-                            bps = st.number_input("what was your systolic blood pressure today?")
-                            bps1 = float(bps)
-                            bpd = st.number_input("what was your diastolicressure today?")
-                            int_val = st.number_input('Seconds', min_value=0, max_value=250, value=5, step=1)
-                            if int_val > 120:
-                            	st.info("Login to Get Started")                    
+                            int_val = st.number_input('what was your systolic blood pressure today?', min_value=0, max_value=250, value=5, step=1)
+                            int_val2 = st.number_input('what was your diastolicressure today', min_value=0, max_value=250, value=5, step=1)
+                            if int_val > 130 or int_val2 > 80:
+                            	st.info("Your blood pressure is above the recommended goal.")                    
 				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
                             st.markdown("The recommended systolic and diastolic blood pressure values for you are less than **130** mmHg and **80** mmHg respectively.")
