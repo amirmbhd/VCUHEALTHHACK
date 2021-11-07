@@ -141,7 +141,7 @@ def main():
                         st.markdown("**Storage:** Refrigerate medication pens until ready to inject. Take one pen out of the fridge and let sit for 5 minutes before injection. Do not store medication pen outside of the refrigerator")
                         st.markdown("**Side effects:** Sudden and violent death (70% of cases), mild headache (3%).")
                         st.markdown("**Amlodipine 5mg for High Blood Pressure**")
-                        st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension."
+                        st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension.")
                         st.markdown("**Storage:** Store at room temperature away from moisture or direct sunlight.")
                         st.markdown("**Side effects:** Undesired stroke event (50% of cases).")
                         st.markdown("**My Pharmacy Contacts:**")
