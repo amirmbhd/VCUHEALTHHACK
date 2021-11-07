@@ -121,7 +121,7 @@ def main():
                         st.markdown(" Blood Glucose: 90 mg/dL")
                         st.markdown(" Heart Rate: 90 beats per minute")
                         st.markdown(" Weight: 243 lbs")
-                        st.write("check out this [link](https://drive.google.com/file/d/1eRJHrcukUcoKUsmx0htwtJDTOdaMsA7m/view?usp=sharing)")
+                        st.write("Please find your full sisit summary below:")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
                         Image.open('SampleVisitSummary.png').convert('RGB').save('SampleVisitSummary2.png')
