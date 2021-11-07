@@ -191,7 +191,7 @@ def main():
                             bps = st.number_input("what was your systolic blood pressure today?")
                             bps1 = float(bps)
                             bpd = st.number_input("what was your diastolicressure today?")
-                            int_val = st.number_input('Seconds', min_value=80, max_value=250, value=5, step=1)
+                            int_val = st.number_input('Seconds', min_value=0, max_value=250, value=5, step=1)
                             if int_val > 120:
                             	st.info("Login to Get Started")                    
 				
