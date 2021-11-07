@@ -174,7 +174,7 @@ def main():
 				
 				
                             df = pd.read_csv("Glucose.csv")
-                            alt.Chart(df)
+                            st.line_chart(df)
 
                             if st.button("Predict"):
 
