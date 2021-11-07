@@ -191,10 +191,10 @@ def main():
                             bps = st.number_input("what was your systolic blood pressure today?")
                             bps1 = float(bps)
                             bpd = st.number_input("what was your diastolicressure today?")
-int_val = st.slider('Seconds', min_value=80, max_value=2500, value=5, step=1)
-int_val = st.number_input('Seconds', min_value=1, max_value=10, value=5, step=1)
-                            if bps1> 130:
-                            	st.info("Your blood pressure value is above goal.")
+                            int_val = st.slider('Seconds', min_value=80, max_value=2500, value=5, step=1)
+                            int_val = st.number_input('Seconds', min_value=1, max_value=10, value=5, step=1)
+                            #if bps1> 130:
+                            	#st.info("Your blood pressure value is above goal.")
 				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
                             st.markdown("The recommended systolic and diastolic blood pressure values for you are less than **130** mmHg and **80** mmHg respectively.")
