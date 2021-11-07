@@ -83,7 +83,10 @@ def main():
     if choice == "Home":
         st.subheader("Home")
         st.markdown( "Pocket HealthRef is a web-based tool where you can access information about your recent visits to the doctor’s office!\n Among other things, Patient HealthRef allows you to relisten to your visit with your doctor. If you’ve ever felt like you forgot some important information after a visit, Pocket HealthRef is just the tool for you! ")
-        st.markdown("**To start using Pocket HealthRef, please follow these steps:**")
+        Image.open('logo1.png').convert('RGB').save('logo2.png')
+        c_image7 = 'logo2.png'
+        load_images(c_image7)
+	st.markdown("**To start using Pocket HealthRef, please follow these steps:**")
         st.markdown(" New Users: Create an account by clicking the SignUp option from the dropdown menu on the left side of your screen") 
         st.markdown(" Login to your account by clicking on the Login option from the dropdown menu.")
         st.markdown(" At this point, you should be able to see the data that your doctor has added to your account.")
