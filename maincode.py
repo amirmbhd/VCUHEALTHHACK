@@ -192,7 +192,8 @@ def main():
                             	st.info("Your blood pressure is above the recommended goal.")      
                             if int_val < 130 and int_val2 < 80:
                             	st.info("Your blood pressure is within the recommended goal.")
-				
+                            if int_val = 5 or int_val2 = 5:
+                            	pass				
                             st.markdown("**Your systolic and diastolic blood pressure trend:**")
                             st.markdown("The recommended systolic and diastolic blood pressure values for you are less than **130** mmHg and **80** mmHg respectively.")
                             df2 = pd.read_csv("bp.csv")
