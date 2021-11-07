@@ -181,11 +181,6 @@ def main():
 			
 			
                     elif activity == "Health Check":
-                            st.subheader("Instant feedback on your daily health measurments ")
-                            fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
-                            pretty_result = {"Fasting blood glucose":fasting_bg}
-                            st.json(pretty_result)
-                            model_choice = st.selectbox("Select Model",["LR","KNN","Blood glucose Prection"])
 				
                             st.markdown("**Your fasting blood glucose trend:**")
                             st.markdown("The recommended fasting blood glucose range is within **70–130** mg/dl for you.")
