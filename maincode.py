@@ -124,13 +124,7 @@ def main():
                         st.write("check out this [link](https://github.com/amirmbhd/VCUHEALTHHACK/blob/b919d2a4dd77a8a2d9c9d9dcf283a49b07ea32c7/Sample%20Visit%20Summary.pdf)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
-                        show_pdf(SampleVisitSummary.pdf)
-                        def show_pdf(file_path):
-                            with open(SampleVisitSummary.pdf,"rb") as f:
-                                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-                            pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
-                            st.markdown(pdf_display, unsafe_allow_html=True)
-                            show_pdf("my_pdf.pdf")
+			st.image(0001.jpg, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 			
