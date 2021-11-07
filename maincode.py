@@ -173,6 +173,8 @@ def main():
 				
 				
                             df = pd.read_csv("Glucose.csv")
+                            df = df.rename(columns={'Date':'index'}).set_index('index')
+
                             st.line_chart(df)
 
                             if st.button("Predict"):
