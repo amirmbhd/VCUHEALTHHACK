@@ -100,6 +100,7 @@ def main():
                     if activity == ( "Visit Overview"): 
                         st.subheader("Visit Overview")
                         st.markdown("** What are the changes after my previous visit? **")
+                        st.markdown(" No change in medication. \n No change in diet. \n No change in exercise recommendations.")
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
