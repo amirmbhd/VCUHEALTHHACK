@@ -124,7 +124,7 @@ def main():
                         st.write("check out this [link](https://drive.google.com/file/d/1eRJHrcukUcoKUsmx0htwtJDTOdaMsA7m/view?usp=sharing)")
                         st.markdown(" **Lab Results**")
                         st.markdown(" Lab results are all normal. ")
-
+                        st.markdown(SampleVisitSummary.pdf, unsafe_allow_html=True)
                        
 
 
