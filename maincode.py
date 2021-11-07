@@ -188,7 +188,7 @@ def main():
                             df = pd.read_csv("Glucose.csv")
                             st.line_chart(df)
                             df2 = pd.read_csv("bp.csv")
-                            st.line_chart(df2)
+                            st.bar_chart(df2)
 				
 				
                             if st.button("Predict"):
