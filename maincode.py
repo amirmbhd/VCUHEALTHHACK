@@ -121,15 +121,17 @@ def main():
                         st.markdown(" Blood Glucose: 90 mg/dL")
                         st.markdown(" Heart Rate: 90 beats per minute")
                         st.markdown(" Weight: 243 lbs")
-                        st.write("Please find your full sisit summary below:")
-                        st.markdown(" **Lab Results**")
-                        st.markdown(" Lab results are all normal. ")
+                        st.write("Please find your full viisit summary below:")
+
                         Image.open('SampleVisitSummary.png').convert('RGB').save('SampleVisitSummary2.png')
                         c_image = 'SampleVisitSummary2.png'
                         load_images(c_image)
-                       
+                        st.markdown(" **Lab Results**")
+                        st.markdown(" Lab results are all normal. ")
+                        st.write("Please find your full lab results below:")
 
-
+                        Image.open('labresults.png').convert('RGB').save('labresults2.png')
+                        c_image = 'labresults2.png'
 			
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
