@@ -133,6 +133,18 @@ def main():
                         Image.open('labresults.png').convert('RGB').save('labresults2.png')
                         c_image2 = 'labresults2.png'
                         load_images(c_image2)
+                    elif activity == "Medications":
+                        st.subheader("Medications")
+                        st.markdown("**Insulin Glargine [Lantus SoloStar] 100 mg/mL for Type 2 Diabetes**")
+                        st.markdown(" **Direction:** Inject ten (10) units into the side of your lower abdomen once a day. Injection instructions are included with the medication pen.")		
+			
+			
+			
+			
+			
+			
+			
+			
                     elif activity == "Health Check":
                             st.subheader("Instant feedback on your daily health measurments ")
                             fasting_bg = st.number_input("what was your fasting blood glucose?",7,580)   
