@@ -117,7 +117,7 @@ def main():
                         st.markdown(" Phone Number: (804) 987-6554")
                         st.markdown(" Office Hours: 8 am to 3 pm, Monday to Thursday")
                         st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above!")
-                        st.date_input("Use this calender to book or reschedule an appoinment with us", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None)
+                        st.date_input("Use this calender to book or reschedule an appoinment with us", value=None, min_value=None, max_value=None, key=None, on_change=None, args=None, kwargs=None)
                     elif activity == ( "Visit Summary"): 
                         st.subheader("Visit Summary")
                         st.markdown("Date: 10/10/2021")
