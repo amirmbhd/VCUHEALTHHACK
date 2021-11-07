@@ -22,7 +22,7 @@ import hashlib
 
 from PIL import Image
 
-import altair as alt
+
 
 from managedb import *
 
