@@ -120,7 +120,7 @@ def main():
                         st.markdown(" Address: 4444 West Coast Dr., Richmond, VA 23220")
                         st.markdown(" Phone Number: (804) 987-6554")
                         st.markdown(" Office Hours: 8 am to 3 pm, Monday to Thursday")
-                        st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above!")
+                        st.markdown(" If you have any questions, or if you need to reschedule your next appointment, please call me using the phone number above or use the following calender to request a new appoinment.")
                         st.header("Request to book or reschedule an appoinment here:")
                         st.date_input('Office Availability')
  
