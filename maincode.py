@@ -22,6 +22,7 @@ import hashlib
 
 from PIL import Image
 
+import altair as alt
 
 from managedb import *
 
@@ -173,7 +174,7 @@ def main():
 				
 				
                             df = pd.read_csv("Glucose.csv")
-                            st.line_chart(df)
+                            alt.chart(df)
 
                             if st.button("Predict"):
 
