@@ -144,6 +144,13 @@ def main():
                         st.markdown("**Direction:** Take one (1) tablet by mouth once a day for hypertension.")
                         st.markdown("**Storage:** Store at room temperature away from moisture or direct sunlight.")
                         st.markdown("**Side effects:** Undesired stroke event (50% of cases).")
+                        Image.open('amlodipine.png').convert('RGB').save('amlodipine2.png')
+                        c_image3 = 'amlodipine2.png'
+                        load_images(c_image3)			
+			
+			
+			
+			
                         st.subheader("**My Pharmacy Contacts:**")
                         st.markdown("**Pharmacist’s Name:** Dr. Uwu Lepolski")
                         st.markdown("**Address:** 4448 West Coast Dr., Richmond, VA 23220")
